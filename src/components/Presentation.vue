@@ -1,7 +1,7 @@
 <template>
   <main class="presentation">
     <div>
-      <a href="">
+      <a href="https://drive.google.com/file/d/1L-HxzH4KHwZUspZ-QiKIPs86CHep6mfo/view?usp=sharing" target="_blank">
         <img src="../assets/resume.svg" alt="" class="resume">
       </a>
     </div>
@@ -15,7 +15,7 @@
       <h3>Fiz rapidamente esse "clone" do site da Efí Pay em VueJS 3 para falar um pouco de mim e demonstrar parte dos meus conhecimentos em tecnologias front-end. Escolhi o Vue por que só tenho um projeto de hackathon com esse framework para mostrar pra vocês e por ser um dos requisitos.</h3>
     </div>
 
-    <a href="/" class="cta cta-curriculum">
+    <a href="https://drive.google.com/file/d/1L-HxzH4KHwZUspZ-QiKIPs86CHep6mfo/view?usp=sharing" target="_blank" class="cta cta-curriculum">
       <img alt="Vue logo" src="@/assets/arrow.svg" />
       <span>Acessar currículo completo</span>
     </a>
