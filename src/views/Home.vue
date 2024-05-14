@@ -13,7 +13,7 @@ import Projects from '../components/Projects.vue';
     <Conclusion />
 
     <footer>
-      <p>Carta de apresentação do <span>Filipe Rodrigo</span> para <span>Efí Pay</span>, vaga de Desenvolvedor front-end Pleno</p>
+      <p>Carta de apresentação do <a href="https://filiperv7.vercel.app/" target="_blank">Filipe Rodrigo</a> para <span>Efí Pay</span>, vaga de Desenvolvedor front-end Pleno</p>
 
       <p>Mini clone da página inicial de <a href="https://dev.efipay.com.br/" target="_blank">documentação técnica</a> da Efí Pay</p>
     </footer>
@@ -29,11 +29,11 @@ import Projects from '../components/Projects.vue';
     padding: 1rem 6rem;
 
     border-top: 2px solid #cecece;
-
-    font-style: italic;
   }
-  footer p span {
-    font-weight: 500;
+  footer p span,
+  footer p a {
+    font-weight: 600;
+    color: #f37021;
   }
 
   @media (max-width: 1264px) {

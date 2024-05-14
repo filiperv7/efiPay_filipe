@@ -1,5 +1,7 @@
 <template>
   <div class="conclusion">
+    <h2><span>Concluindo</span>...</h2>
+
     <div>
       <p>
       Atualmente trabalho na SdInnovation como Desenvolvedor Back-end Pleno, presencialmente. Usando o framework back-end NestJS.
@@ -29,6 +31,16 @@
 
     max-width: 90%;
   }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  h2 span {
+    font-weight: 700;
+    color: var(--vt-c-text-principal);
+  }
+
   .conclusion p {
     font-size: 1rem;
     font-weight: 600;
