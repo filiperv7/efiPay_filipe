@@ -1,5 +1,6 @@
 <template>
-  <div class="conclusion">
+  <div class="conclusion-container">
+    <div class="conclusion">
     <h2><span>Concluindo</span>...</h2>
 
     <div>
@@ -17,9 +18,15 @@
       Já atuei com React, Next.js, Angular, HTML, CSS, JavaScript, TypeScript, APIs Rest, C#, Node, Express, NestJS, Mocha, Jest, MySQL, PostgreSQL, MongoDB, GraphQL.
     </p>
   </div>
+  </div>
 </template>
 
 <style scoped>
+  div.conclusion-container {
+    display: flex;
+    justify-content: center;
+  }
+
   .conclusion {
     display: flex;
     flex-direction: column;
@@ -29,7 +36,7 @@
     
     padding: 3rem 6rem;
 
-    max-width: 90%;
+    max-width: 1440px;
   }
 
   h2 {

@@ -1,11 +1,12 @@
 <template>
-  <main class="presentation">
-    <div>
+  <main>
+    <div class="presentation">
+      <div>
       <a href="https://drive.google.com/file/d/1L-HxzH4KHwZUspZ-QiKIPs86CHep6mfo/view?usp=sharing" target="_blank">
         <img src="../assets/resume.svg" alt="" class="resume">
       </a>
     </div>
-   <div class="container-presentation">
+   <div class="content-presentation">
     <div class="text-presentation">
       <h1>
         <strong>Filipe Rodrigo</strong>,
@@ -20,13 +21,21 @@
       <span>Acessar currículo completo</span>
     </a>
    </div>
+    </div>
   </main>
 </template>
 
 <style scoped>
-  main.presentation {
+  main {
+    display: flex;
+    justify-content: center;
+  }
+
+  div.presentation {
     display: flex;
     justify-content: space-between;
+
+    max-width: 1440px;
 
     padding: 6rem 6rem;
 
@@ -43,7 +52,7 @@
     max-height: 32rem;
   }
   
-  main .container-presentation {
+  main .content-presentation {
     max-width: 37%;
 
     margin-top: 6rem;
@@ -91,11 +100,11 @@
   }
   
   @media (max-width: 1127px) {
-    main.presentation {
+    div.presentation {
       padding-bottom: 2rem;
     }
 
-    div.container-presentation {
+    div.content-presentation {
       margin-top: 3rem;
     }
 
@@ -113,13 +122,13 @@
       max-width: 24rem;
     }
 
-    div.container-presentation {
+    div.content-presentation {
       max-width: 42%;
     }
   }
 
   @media (max-width: 900px) {
-    main.presentation {
+    div.presentation {
       flex-direction: column-reverse;
       align-items: center;
 
@@ -128,7 +137,7 @@
       padding-bottom: 0;
     }
 
-    main .container-presentation {
+    main .content-presentation {
       max-width: 100%;
 
       margin-top: 5rem;
@@ -145,8 +154,8 @@
       width: 70%;
     }
     
-    .container-presentation h1,
-    .container-presentation h3 {
+    .content-presentation h1,
+    .content-presentation h3 {
       text-align: center;
     }
 
@@ -156,7 +165,7 @@
   }
 
   @media (max-width: 768px) {
-    main.presentation {
+    div.presentation {
       padding-left: 2rem;
       padding-right: 2rem;
     }
@@ -175,7 +184,7 @@
   }
 
   @media (max-width: 375px) {
-    main.presentation {
+    div.presentation {
       padding-left: 1rem;
       padding-right: 1rem;
     }

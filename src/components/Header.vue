@@ -1,22 +1,31 @@
 <template>
-  <div class="header">
-    <div class="logo">
-      <p>Olá, recrutador(a) da</p>
-      <img alt="Vue logo" class="logo-efi" src="@/assets/logo-efi-pay.svg" />
-    </div>
-    <div class="buttons">
-      <a href="https://www.linkedin.com/in/filiperv7/" target="_blank" class="cta">Contatar Filipe</a>
+  <header>
+    <div class="header">
+      <div class="logo">
+        <p>Olá, recrutador(a) da</p>
+        <img alt="Vue logo" class="logo-efi" src="@/assets/logo-efi-pay.svg" />
+      </div>
+      <div class="buttons">
+        <a href="https://www.linkedin.com/in/filiperv7/" target="_blank" class="cta">Contatar Filipe</a>
       <a href="https://github.com/filiperv7/efiPay_filipe" target="_blank" class="cta emphasis">Ver repositório</a>
     </div>
   </div>
+</header>
 </template>
 
 <style scoped>
+  header {
+    display: flex;
+    justify-content: center;
+  }
+
   .header {
     z-index: 10;
     position: absolute;
 
     width: 100%;
+    max-width: 1440px;
+    
     padding: 2rem 6rem;
 
     display: flex;

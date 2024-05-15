@@ -45,6 +45,7 @@ const cardsContent: CardContent[] = [
 </script>
 
 <template>
+  <div class="projects-container">
   <div class="projects">
     <div class="content">
       <h2><span>Carreira,</span> meu desempenho profissional</h2>
@@ -55,18 +56,28 @@ const cardsContent: CardContent[] = [
     </div>
 
     <a href="https://filiperv7.vercel.app/" target="_blank"><img src="@/assets/portfolio.svg" alt="" class="portfolio"></a>
+   </div>
   </div>
 </template>
 
 <style scoped>
+  div.projects-container {
+    background-color: #ffffff;
+
+    display: flex;
+    justify-content: center;
+  }
+
   div.projects {
     display: flex;
     justify-content: space-between;
     align-items: center;
     
     position: relative;
+
+    width: 100%;
+    max-width: 1440px;
     
-    background-color: #ffffff;
     padding: 3rem 6rem;
   }
   div.projects .content {
@@ -100,11 +111,20 @@ const cardsContent: CardContent[] = [
   img.portfolio {
     height: 22rem;
     width: 30rem;
+    
     object-fit: cover;
     object-position: 0;
+  }
+  
+  @media (min-width: 1460px) {
+    img.portfolio {
+      position: static;
+      object-fit: fill;
+      
+      height: 25rem;
+      width: 34rem;
+    }
 
-    border-top-left-radius: 1.3rem;
-    border-bottom-left-radius: 1.3rem;
   }
 
   @media (max-width: 1300px) {
